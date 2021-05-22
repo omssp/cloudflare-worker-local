@@ -4,8 +4,10 @@ Run (or test) a Cloudflare Worker Locally. If you are looking for a project that
 ## Running
 
 ```shell
-~~$ npm install -g cloudflare-worker-local~~
+$ npm install -g cloudflare-worker-local
+ (or for root installation)
 $ sudo npm install -g cloudflare-worker-local --unsafe-perm=true --allow-root
+
 $ cloudflare-worker-local /path/to/worker.js localhost:3000 4000
 
 Listening on Port 4000 and forwarding requests to http://localhost:3000/
@@ -17,7 +19,8 @@ It is possible to use nodemon to automatically reload the worker
 
 ```shell
 $ npm install -g nodemon
-~~$ nodemon --watch /path/to/worker.js --signal SIGHUP --exec 'cloudflare-worker-local /path/to/worker.js localhost:3000 4000'~~
+$ nodemon --watch /path/to/worker.js --signal SIGHUP --exec 'cloudflare-worker-local /path/to/worker.js localhost:3000 4000'
+ (or)
 $ nodemon --watch /path/to/worker.js --exec 'cloudflare-worker-local /path/to/worker.js localhost:3000 4000'
 ```
 
