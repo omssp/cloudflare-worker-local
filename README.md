@@ -5,6 +5,8 @@ Run (or test) a Cloudflare Worker Locally. If you are looking for a project that
 
 ```shell
 $ npm install -g cloudflare-worker-local
+or
+$ sudo npm install -g cloudflare-worker-local --unsafe-perm=true --allow-root
 $ cloudflare-worker-local /path/to/worker.js localhost:3000 4000
 
 Listening on Port 4000 and forwarding requests to http://localhost:3000/
